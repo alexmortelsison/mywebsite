@@ -37,7 +37,7 @@ export default function Navbar() {
             className="bg-transparent invert"
           />
         </Link>
-        <h1 className="ml-2 font-bold text-xl">alex sison</h1>
+        <h1 className="ml-2 font-bold text-xl">alex sison.</h1>
       </div>
       <div className="flex space-x-4 lg:flex-1 lg:ml-12 items-center">
         {navLinks.map((link) => (
@@ -60,14 +60,14 @@ export default function Navbar() {
           <HoverCardTrigger className="cursor-pointer">Call</HoverCardTrigger>
           <HoverCardContent>+8170 3363 2542</HoverCardContent>
         </HoverCard>
-        <button className="bg-white text-black px-8 rounded-full py-1">
-          <a
-            target="_blank"
-            href="https://mail.google.com/mail/?view=cm&to=alexismortelsison@gmail.com&su=Hello&body=This%20is%20a%20test%20email"
-          >
-            Email
-          </a>
-        </button>
+
+        <a
+          target="_blank"
+          href="https://mail.google.com/mail/?view=cm&to=alexismortelsison@gmail.com&su=Hello&body=This%20is%20a%20test%20email"
+          className="bg-white text-black px-8 rounded-full py-1 cursor-pointer"
+        >
+          Email
+        </a>
       </div>
     </nav>
   );
