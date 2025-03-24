@@ -3,7 +3,6 @@ import { Geist, Geist_Mono, Roboto } from "next/font/google";
 import "./globals.css";
 import ThemeWrapper from "./components/ThemeWrapper";
 import Navbar from "./components/Navbar";
-import Image from "next/image";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -35,19 +34,8 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} ${roboto.className} antialiased`}
       >
         <ThemeWrapper>
-          <main className="relative min-h-screen">
-            <div className="">
-              <Image
-                src={"/bg.png"}
-                alt="background"
-                fill
-                quality={100}
-                className="object-cover -z-50 brightness-70"
-              />
-            </div>
-            <Navbar />
-            {children}
-          </main>
+          <Navbar />
+          {children}
         </ThemeWrapper>
       </body>
     </html>
