@@ -37,7 +37,6 @@ export default function Navbar() {
             className="bg-transparent invert"
           />
         </Link>
-        <h1 className="ml-2 font-bold text-xl">alex sison.</h1>
       </div>
       <div className="flex space-x-4 lg:flex-1 lg:ml-12 items-center">
         {navLinks.map((link) => (
