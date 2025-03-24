@@ -1,6 +1,9 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Geist, Geist_Mono, Roboto } from "next/font/google";
 import "./globals.css";
+import ThemeWrapper from "./components/ThemeWrapper";
+import Navbar from "./components/Navbar";
+import Image from "next/image";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -8,6 +11,10 @@ const geistSans = Geist({
 });
 
 const geistMono = Geist_Mono({
+  variable: "--font-geist-mono",
+  subsets: ["latin"],
+});
+const roboto = Roboto({
   variable: "--font-geist-mono",
   subsets: ["latin"],
 });
@@ -23,11 +30,25 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" suppressHydrationWarning>
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} ${roboto.className} antialiased`}
       >
-        {children}
+        <ThemeWrapper>
+          <main className="relative min-h-screen">
+            <div className="">
+              <Image
+                src={"/bg.png"}
+                alt="background"
+                fill
+                quality={100}
+                className="object-cover -z-50 brightness-70"
+              />
+            </div>
+            <Navbar />
+            {children}
+          </main>
+        </ThemeWrapper>
       </body>
     </html>
   );
