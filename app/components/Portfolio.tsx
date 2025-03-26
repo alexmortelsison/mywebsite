@@ -12,7 +12,7 @@ export default function PortfolioPage() {
     <div className="bg-white h-[50vh] max-w-7xl mx-auto mt-24 px-6 lg:px-0">
       <div className="flex flex-col justify-center items-center">
         <p>Showcasing My Skills, Projects, and Passion</p>
-        <h1 className="text-4xl font-bold pt-2">Portfolio</h1>
+        <h1 className="text-4xl pt-2">My Portfolio</h1>
       </div>
       <div className="md:grid md:grid-cols-2 2xl:space-x-80 md:space-x-8 md:place-items-center 2xl:mt-32 px-4 md:mt-8">
         <div className="mt-8">

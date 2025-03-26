@@ -13,7 +13,7 @@ export default function PortfolioPage() {
       <div className="max-w-7xl mx-auto flex flex-col justify-center">
         <div className="flex flex-col justify-center items-center mt-16">
           <p>Showcasing My Skills, Projects, and Passion</p>
-          <h1 className="text-4xl font-bold pt-2">Portfolio</h1>
+          <h1 className="text-4xl pt-2">My Portfolio</h1>
         </div>
         <div className="md:grid md:grid-cols-2 2xl:space-x-80 2xl:mt-32 px-4">
           <div className="mt-8">
