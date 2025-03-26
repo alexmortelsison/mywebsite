@@ -45,7 +45,7 @@ export default function Navbar() {
               href={link.href}
               className={`${
                 pathName === link.href
-                  ? "font-bold underline underline-offset-4"
+                  ? "font-bold underline underline-offset-4 text-[#29b2ff]"
                   : "text-gray-500"
               }`}
             >
@@ -63,7 +63,7 @@ export default function Navbar() {
         <a
           target="_blank"
           href="https://mail.google.com/mail/?view=cm&to=alexismortelsison@gmail.com&su=Hello&body=This%20is%20a%20test%20email"
-          className="bg-white text-black px-8 rounded-full py-1 cursor-pointer"
+          className="text-white bg-[#29b2ff]  px-8 rounded-full py-1 cursor-pointer"
         >
           Email
         </a>

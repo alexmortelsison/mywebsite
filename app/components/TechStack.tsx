@@ -7,7 +7,7 @@ export default function TechStack() {
   return (
     <div className="lg:h-[50vh] md:h-[25vh] bg-white z-50 tracking-tighter mt-24 md:mt-4">
       <div className="max-w-7xl mx-auto flex flex-col justify-center items-center pt-8 md:pt-0 2xl:pt-80 lg:pt-48">
-        <h1 className="lg:text-xl">Tech Stack</h1>
+        <h1 className="lg:text-xl">Main Tech Stack</h1>
         <p className="text-center text-2xl lg:text-4xl px-8 lg:px-0 pt-2 lg:pt-4 lg:max-w-[800px]">
           I use Next.Js, React, TypeScript, and TailwindCSS for fast and
           scalable web development.
@@ -28,7 +28,7 @@ export default function TechStack() {
               <div className="">
                 <TbBrandNextjs
                   size={200}
-                  className="w-[120px] h-[120px] md:w-[80px] md:h-[80px] text-black/80"
+                  className="w-[120px] h-[120px] md:w-[80px] md:h-[80px] text-[#29b2ff]"
                 />
               </div>
             </div>
@@ -36,7 +36,7 @@ export default function TechStack() {
               <div className="">
                 <DiReact
                   size={200}
-                  className="w-[120px] h-[120px] md:w-[80px] md:h-[80px] text-black/80"
+                  className="w-[120px] h-[120px] md:w-[80px] md:h-[80px] text-[#29b2ff]"
                 />
               </div>
             </div>
@@ -44,7 +44,7 @@ export default function TechStack() {
               <div className="">
                 <TbBrandTypescript
                   size={200}
-                  className="w-[120px] h-[120px] md:w-[80px] md:h-[80px] text-black/80"
+                  className="w-[120px] h-[120px] md:w-[80px] md:h-[80px] text-[#29b2ff]"
                 />
               </div>
             </div>
@@ -52,7 +52,7 @@ export default function TechStack() {
               <div className="">
                 <SiTailwindcss
                   size={200}
-                  className="w-[120px] h-[120px] md:w-[80px] md:h-[80px] text-black/80"
+                  className="w-[120px] h-[120px] md:w-[80px] md:h-[80px] text-[#29b2ff]"
                 />
               </div>
             </div>
