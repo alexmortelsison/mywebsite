@@ -30,11 +30,11 @@ export default function Navbar() {
       <div className="flex items-center">
         <Link href={"/"}>
           <Image
-            src={"/headphone.png"}
+            src={"/logo.png"}
             alt="logo"
             width={40}
             height={40}
-            className="bg-transparent invert"
+            className="bg-transparent"
           />
         </Link>
       </div>

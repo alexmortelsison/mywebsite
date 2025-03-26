@@ -1,32 +1,59 @@
-import * as React from "react";
+"use client";
+import { ChevronLeft, ChevronRight } from "lucide-react";
+import React, { useState } from "react";
 
-import { Card, CardContent } from "@/components/ui/card";
-import {
-  Carousel,
-  CarouselContent,
-  CarouselItem,
-  CarouselNext,
-  CarouselPrevious,
-} from "@/components/ui/carousel";
+const slides = [
+  "allymusic.mp4",
+  "techhub.mp4",
+  "archbook.mp4",
+  "postremami.mp4",
+];
 
-export function CarouselD() {
+type CarouselPageProps = {
+  children: React.ReactNode; // Accepts any React content, including video elements
+};
+
+export default function CarouselPage({ children }: CarouselPageProps) {
+  const [current, setCurrent] = useState(0);
+
+  const prev = () =>
+    setCurrent((current) => (current == 0 ? slides.length - 1 : current - 1));
+  const next = () =>
+    setCurrent((current) => (current == slides.length - 1 ? 0 : current + 1));
   return (
-    <Carousel className="w-full max-w-xs">
-      <CarouselContent>
-        {Array.from({ length: 5 }).map((_, index) => (
-          <CarouselItem key={index}>
-            <div className="p-1">
-              <Card>
-                <CardContent className="flex aspect-square items-center justify-center p-6">
-                  <span className="text-4xl font-semibold">{index + 1}</span>
-                </CardContent>
-              </Card>
-            </div>
-          </CarouselItem>
-        ))}
-      </CarouselContent>
-      <CarouselPrevious />
-      <CarouselNext />
-    </Carousel>
+    <div className="overflow-hidden relative">
+      <div
+        className="flex transition-transform ease-out duration-500"
+        style={{ transform: `translateX(-${current * 100}%)` }}
+      >
+        {children}
+      </div>
+      <div className="absolute inset-0 flex items-center justify-between p-4">
+        <button
+          onClick={prev}
+          className="p-1 rounded-full shadow bg-white/40 text-gray-800 hover:bg-white"
+        >
+          <ChevronLeft size={40} />
+        </button>
+        <button
+          onClick={next}
+          className="p-1 rounded-full shadow bg-white/40 text-gray-800 hover:bg-white"
+        >
+          <ChevronRight size={40} />
+        </button>
+      </div>
+      <div className="absolute bottom-4 right-0 left-0">
+        <div className="flex items-center justify-center gap-2">
+          {slides.map((_, i) => (
+            <div
+              key={""}
+              className={`transition-all w-2 h-2 bg-white rounded-full ${
+                current === i ? "p-1" : "bg-white/20"
+              }`}
+            />
+          ))}
+        </div>
+      </div>
+    </div>
   );
 }
