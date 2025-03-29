@@ -27,7 +27,7 @@ export default function PortfolioPage() {
           <div>
             <CarouselPage>
               {slides.map((slide, index) => (
-                <video key={index} controls autoPlay muted loop>
+                <video key={index} controls muted loop>
                   <source src={slide} type="video/mp4" />
                   Your browser does not support the video tag.
                 </video>
