@@ -109,7 +109,7 @@ export default function TechStack() {
               </div>
             </div>
           </div>
-          <div className="flex mt-24 md:mt-8 space-x-4 lg:hidden">
+          <div className="flex mt-12 md:mt-8 space-x-4 lg:hidden">
             {stack1.map((link) => (
               <div
                 key={link.name}
