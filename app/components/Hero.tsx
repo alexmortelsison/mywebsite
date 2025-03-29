@@ -1,7 +1,7 @@
 import Image from "next/image";
 export default function HeroPage() {
   return (
-    <div className="z-10 tracking-tighter ">
+    <div className="z-10 tracking-tighter h-[100vh]">
       <div className="">
         <div className="">
           <Image

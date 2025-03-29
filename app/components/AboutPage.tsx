@@ -6,7 +6,7 @@ import { FaXTwitter } from "react-icons/fa6";
 import { SiFirebase, SiPrisma, SiSupabase } from "react-icons/si";
 export default function AboutPage() {
   return (
-    <div className="bg-white z-50 tracking-tighter inset-0 bg-[radial-gradient(#e5e7eb_1px,transparent_1px)] [background-size:16px_16px] h-[100vh] md:px-8">
+    <div className="bg-white z-50 tracking-tighter inset-0 bg-[radial-gradient(#e5e7eb_1px,transparent_1px)] [background-size:16px_16px] h-[100vh] md:px-8 ">
       <div className="h-[100vh]">
         <div className="flex flex-col items-center justify-center pt-24 lg:pt-44">
           <p className="text-sm md:text-2xl">
@@ -58,7 +58,7 @@ export default function AboutPage() {
               </a>
             </div>
           </div>
-          <div className="md:col-span-3 md:pl-8 col-span-4 text-center md:text-start px-4 md:px-0">
+          <div className="md:col-span-3 md:pl-8 col-span-4 text-center md:text-start px-4 md:px-0 tracking-tighter">
             <p>
               I am Alex Sison, a dedicated{" "}
               <span className="font-bold text-[#29b2ff]">web developer</span>{" "}

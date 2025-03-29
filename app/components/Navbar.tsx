@@ -26,7 +26,7 @@ const navLinks = [
 export default function Navbar() {
   const pathName = usePathname();
   return (
-    <nav className="flex bg-gray-600/20 backdrop-blur-sm py-6 2xl:px-82 lg:px-18 text-white justify-between px-8">
+    <nav className="flex bg-gray-600/20 backdrop-blur-sm py-6 2xl:px-82 lg:px-18 text-white justify-between px-8 tracking-tighter">
       <div className="flex items-center">
         <Link href={"/"}>
           <Image
@@ -38,7 +38,7 @@ export default function Navbar() {
           />
         </Link>
       </div>
-      <div className="flex space-x-4 lg:flex-1 lg:ml-12 items-center">
+      <div className="flex space-x-4 lg:flex-1 lg:ml-12 items-center tracking-tighter">
         {navLinks.map((link) => (
           <div key={link.href}>
             <Link
