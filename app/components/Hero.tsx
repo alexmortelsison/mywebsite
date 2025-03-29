@@ -13,7 +13,7 @@ export default function HeroPage() {
           />
           <div className="bg-gray-800/20 backdrop-blur-sm h-[90vh]">
             <div className="max-w-7xl mx-auto z-10 px-8 lg:px-16 2xl:px-6">
-              <h1 className="pt-[250px] 2xl:pt-[400px] lg:pt-[300px] md:pt-[500px] text-white font-normal text-4xl lg:text-5xl">
+              <h1 className="pt-[250px] 2xl:pt-[400px] lg:pt-[300px] md:pt-[500px] text-white font-normal text-2xl lg:text-5xl">
                 Alex Sison.
               </h1>
               <p className="text-[white] font-bold text-3xl lg:text-6xl">

@@ -57,7 +57,7 @@ const stack2 = [
 
 export default function TechStack() {
   return (
-    <div className="lg:h-[100vh] md:h-[30vh] bg-white z-50 tracking-tighter inset-0 bg-[radial-gradient(#e5e7eb_1px,transparent_1px)] [background-size:16px_16px] lg:pt-48">
+    <div className="lg:h-[100vh] md:h-[30vh] bg-white z-50 tracking-tighter inset-0 bg-[radial-gradient(#e5e7eb_1px,transparent_1px)] [background-size:16px_16px] pt-8 md:pt-16 lg:pt-48">
       <div className="flex flex-col justify-center items-center pt-24 md:pt-0 lg:pt-24">
         <h1 className="lg:text-xl">Main Tech Stack</h1>
         <p className="text-center text-2xl lg:text-4xl px-8 lg:px-0 pt-2 lg:pt-4 lg:max-w-[800px]">
