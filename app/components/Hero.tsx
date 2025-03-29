@@ -11,7 +11,7 @@ export default function HeroPage() {
             quality={100}
             className="object-cover -z-50 brightness-50"
           />
-          <div className="bg-gray-800/20 backdrop-blur-sm h-[80vh]">
+          <div className="bg-gray-800/20 backdrop-blur-sm h-[80vh] lg:h-[100vh]">
             <div className="max-w-7xl mx-auto z-10 px-8 lg:px-16 2xl:px-6">
               <h1 className="pt-[250px] 2xl:pt-[400px] lg:pt-[300px] md:pt-[500px] text-white font-normal text-2xl lg:text-5xl">
                 Alex Sison.

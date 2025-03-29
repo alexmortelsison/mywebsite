@@ -16,7 +16,7 @@ export default function PortfolioPage() {
       </div>
       <div className="md:grid md:grid-cols-2 2xl:space-x-80 md:space-x-8 md:place-items-center 2xl:mt-32 px-4 md:mt-8">
         <div className="mt-8">
-          <h2 className="lg:text-xl text-sm text-center md:text-start ">
+          <h2 className="lg:text-xl text-sm text-center md:text-start lg:px-32 xl:px-0">
             Here, you&apos;ll find a collection of my work, showcasing my
             skills, creativity, and dedication to delivering high-quality
             results. From innovative projects to collaborations, each piece
