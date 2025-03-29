@@ -1,6 +1,6 @@
 export default function WhyMe() {
   return (
-    <div className="lg:h-[50vh] md:h-[25vh] inset-0 bg-white bg-[radial-gradient(#e5e7eb_1px,transparent_1px)] [background-size:16px_16px] ">
+    <div className="lg:h-[50vh] md:h-[25vh] inset-0 bg-white bg-[radial-gradient(#e5e7eb_1px,transparent_1px)] [background-size:16px_16px] py-8">
       <div className="lg:grid grid-cols-2 lg:pl-44 text-start px-8 md:px-16 lg:px-0">
         <div></div>
         <div className="2xl:pt-32 lg:pt-16 md:pt-24 pt-8 py-8 lg:py-0 tracking-tighter lg:w-[50%] lg:text-start text-center">
