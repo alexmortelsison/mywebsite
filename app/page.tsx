@@ -1,3 +1,4 @@
+import AboutPage from "./components/AboutPage";
 import HeroPage from "./components/Hero";
 import PortfolioPage from "./components/Portfolio";
 import TechStack from "./components/TechStack";
@@ -15,6 +16,9 @@ export default function Home() {
       </div>
       <div>
         <TechStack />
+      </div>
+      <div>
+        <AboutPage />
       </div>
     </div>
   );

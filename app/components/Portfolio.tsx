@@ -9,7 +9,7 @@ const slides = [
 
 export default function PortfolioPage() {
   return (
-    <div className="bg-white h-[50vh] max-w-7xl mx-auto mt-24 px-6 lg:px-0">
+    <div className="bg-white h-[50vh] md:h-[45vh] max-w-7xl mx-auto pt-8 px-6 lg:px-0">
       <div className="flex flex-col justify-center items-center">
         <p>Showcasing My Skills, Projects, and Passion</p>
         <h1 className="text-4xl pt-2">My Portfolio</h1>
