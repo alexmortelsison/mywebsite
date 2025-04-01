@@ -9,7 +9,7 @@ export default function WhyMe() {
             applications, leveraging modern technologies to build seamless and
             interactive user interfaces. I specialize in Next.js &mdash;
             ensuring applications are not only fast and efficient but also
-            maintainable and future-proof. &quot;
+            maintainable and future-proof.&quot;
           </h1>
         </div>
       </div>
