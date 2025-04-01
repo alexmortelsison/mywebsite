@@ -22,6 +22,7 @@ export default function AboutPage() {
           <Image
             src="/alex.jpg"
             alt="profile photo"
+            loading="eager"
             width={240}
             height={240}
             className="object-cover border-4 border-white rounded-xl"

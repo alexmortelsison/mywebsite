@@ -21,6 +21,7 @@ export default function AboutPage() {
               alt="profile photo"
               width={240}
               height={240}
+              loading="eager"
               className="object-cover border-4 border-white rounded-xl"
             />
             <p className="pt-4">
