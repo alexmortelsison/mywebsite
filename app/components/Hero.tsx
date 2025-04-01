@@ -8,7 +8,8 @@ export default function HeroPage() {
             src={"/bg.png"}
             alt="background"
             fill
-            quality={100}
+            quality={80}
+            loading="eager"
             className="object-cover -z-50 brightness-50"
           />
           <div className="bg-gray-800/20 backdrop-blur-sm h-[80vh] lg:h-[100vh]">
