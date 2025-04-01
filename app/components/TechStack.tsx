@@ -70,6 +70,8 @@ export default function TechStack() {
             <Image
               src={"/smoke.png"}
               alt=""
+              quality={80}
+              loading="eager"
               width={1000}
               height={1000}
               className="object-cover w-full h-[500px]"
