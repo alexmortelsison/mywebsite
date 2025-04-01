@@ -1,4 +1,5 @@
 import CarouselPage from "../components/CarouselPage";
+import Footer from "../components/Footer";
 
 const slides = [
   "allymusic.mp4",
@@ -38,6 +39,9 @@ export default function PortfolioPage() {
           </div>
         </div>
       </div>
+      <footer className="flex justify-center">
+        <Footer />
+      </footer>
     </div>
   );
 }

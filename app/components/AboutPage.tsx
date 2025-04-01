@@ -4,9 +4,10 @@ import Image from "next/image";
 import { DiJavascript1 } from "react-icons/di";
 import { FaXTwitter } from "react-icons/fa6";
 import { SiFirebase, SiPrisma, SiSupabase } from "react-icons/si";
+import Footer from "./Footer";
 export default function AboutPage() {
   return (
-    <div className="bg-white z-50 tracking-tighter inset-0 bg-[radial-gradient(#e5e7eb_1px,transparent_1px)] [background-size:16px_16px] h-[100vh] md:px-8 ">
+    <div className="bg-white z-50 tracking-tighter inset-0 bg-[radial-gradient(#e5e7eb_1px,transparent_1px)] [background-size:16px_16px] h-[100vh] md:px-8 md:pt-16 lg:pt-32">
       <div className="h-[100vh]">
         <div className="flex flex-col items-center justify-center pt-24 lg:pt-44">
           <p className="text-sm md:text-2xl">
@@ -93,7 +94,7 @@ export default function AboutPage() {
             <span className="font-bold text-[#29b2ff]">Next.js</span>, ensuring
             applications are not only fast and efficient but also maintainable
             and future-proof.
-            <div className="mt-16 mb-4 flex flex-col justify-center items-center md:items-start px-16 md:px-0">
+            <div className="mt-2 mb-4 flex flex-col justify-center items-center md:items-start px-16 md:px-0">
               <div>
                 <h1 className="text-xl mt-4 mb-2">Other Stack</h1>
                 <div className="grid grid-cols-2 lg:grid-cols-6 gap-2 md:grid-cols-3">
@@ -139,6 +140,9 @@ export default function AboutPage() {
           </div>
         </div>
       </div>
+      <footer className="justify-center bottom-0 hidden lg:flex pt-16">
+        <Footer />
+      </footer>
     </div>
   );
 }

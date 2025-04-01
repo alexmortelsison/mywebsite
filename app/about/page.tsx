@@ -14,6 +14,7 @@ import {
   SiTypescript,
 } from "react-icons/si";
 import { TbBrandMongodb, TbBrandNextjs } from "react-icons/tb";
+import Footer from "../components/Footer";
 export default function AboutPage() {
   return (
     <div className="bg-white z-50 tracking-tighter inset-0 bg-[radial-gradient(#e5e7eb_1px,transparent_1px)] [background-size:16px_16px]">
@@ -193,6 +194,9 @@ export default function AboutPage() {
           </div>
         </div>
       </div>
+      <footer className="flex justify-center">
+        <Footer />
+      </footer>
     </div>
   );
 }
