@@ -7,7 +7,7 @@ export default function ReferencePage() {
         <Card
           image={"/jc.png"}
           name={"JC Cerilla"}
-          tel={"+44 (0) 7809 421 099"}
+          tel={"+1 551 226 2528"}
           email={"carlo.cerilla@gmail.com"}
           message={
             "I've had the pleasure of working with Alex at AppDev Manila. He consistently demonstrate professionalism, strong problem-solving skills, and a collaborative spirit. Alex is reliable, dedicated, and always willing to go the extra mile to ensure the success of the team. I highly recommend him for any role - he will be an asset to any team!"
