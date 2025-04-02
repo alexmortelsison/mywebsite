@@ -1,8 +1,5 @@
-import CarouselPage from "../components/CarouselPage";
 import Footer from "../components/Footer";
-import Image from "next/image";
-
-const slides = ["/a1.png", "/a2.png", "/a3.png", "/a4.png"];
+import PortfolioCard from "../components/PortfolioCard";
 
 export default function PortfolioPage() {
   return (
@@ -12,37 +9,28 @@ export default function PortfolioPage() {
           <p>Showcasing My Skills, Projects, and Passion</p>
           <h1 className="text-4xl pt-2">My Portfolio</h1>
         </div>
-        <div className="md:grid md:grid-cols-2 2xl:space-x-80 2xl:mt-32 px-4">
-          <div className="mt-8">
-            <h2 className="md:text-xl  text-center md:text-start">
-              Here, you&apos;ll find a collection of my work, showcasing my
-              skills, creativity, and dedication to delivering high-quality
-              results. From innovative projects to collaborations, each piece
-              reflects my passion for continuous learning and growth.{" "}
-            </h2>
-          </div>
-          <div className="place-items-end mt-16 md:mt-0">
-            <div>
-              <CarouselPage>
-                {slides.map((slide, index) => (
-                  <Image
-                    src={slide}
-                    key={index}
-                    alt="portfolio"
-                    width={500}
-                    height={300}
-                    className="object-cover w-full h-auto"
-                  />
-                ))}
-              </CarouselPage>
-            </div>
-          </div>
-        </div>
       </div>
-
-      <footer className="hidden lg:flex absolute -bottom-0 left-200 pt-32">
-        <Footer />
-      </footer>
+      <div className="grid grid-cols-1 lg:grid-cols-3 md:grid-cols-1 px-4 lg:px-16 2xl:px-0 my-8 space-y-8 lg:space-x-12 lg:pt-8 lg:max-w-7xl lg:mx-auto">
+        <PortfolioCard
+          image={"/a1.png"}
+          name={"Ally Music"}
+          description="A landing page for Ally Music Production showcasing famous Filipino
+          artists to the US."
+          href={"https://allymusicnyc.com/"}
+        />
+        <PortfolioCard
+          image={"/a2.png"}
+          name={"Next Pixel Studio Labs"}
+          description="Highlighting Next Pixel Studio Labs' services. Has a push email function for inquiries."
+          href={"https://nextpixelstudiolabs.vercel.app/"}
+        />
+        <PortfolioCard
+          image={"/a3.png"}
+          name={"TechHub"}
+          description="A mock ecommerce website for shopping gadgets. It has like and search functions. I used NextAuth for authentication, Redux for state management and Stripe for payment."
+          href={"https://techhub-snowy.vercel.app/"}
+        />
+      </div>
     </div>
   );
 }
