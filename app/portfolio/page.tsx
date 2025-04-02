@@ -1,16 +1,12 @@
 import CarouselPage from "../components/CarouselPage";
 import Footer from "../components/Footer";
+import Image from "next/image";
 
-const slides = [
-  "allymusic.mp4",
-  "techhub.mp4",
-  "archbook.mp4",
-  "postremami.mp4",
-];
+const slides = ["/a1.png", "/a2.png", "/a3.png", "/a4.png"];
 
 export default function PortfolioPage() {
   return (
-    <div className="min-h-screen inset-0 bg-white bg-[radial-gradient(#e5e7eb_1px,transparent_1px)] [background-size:16px_16px]">
+    <div className="h-[80vh] inset-0 bg-white bg-[radial-gradient(#e5e7eb_1px,transparent_1px)] [background-size:16px_16px]">
       <div className="max-w-7xl mx-auto flex flex-col justify-center">
         <div className="flex flex-col justify-center items-center mt-16">
           <p>Showcasing My Skills, Projects, and Passion</p>
@@ -29,17 +25,22 @@ export default function PortfolioPage() {
             <div>
               <CarouselPage>
                 {slides.map((slide, index) => (
-                  <video key={index} controls muted loop>
-                    <source src={slide} type="video/mp4" />
-                    Your browser does not support the video tag.
-                  </video>
+                  <Image
+                    src={slide}
+                    key={index}
+                    alt="portfolio"
+                    width={500}
+                    height={300}
+                    className="object-cover w-full h-auto"
+                  />
                 ))}
               </CarouselPage>
             </div>
           </div>
         </div>
       </div>
-      <footer className="flex justify-center">
+
+      <footer className="hidden lg:flex absolute -bottom-0 left-200 pt-32">
         <Footer />
       </footer>
     </div>

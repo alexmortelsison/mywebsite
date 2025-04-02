@@ -2,12 +2,7 @@
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import React, { useState } from "react";
 
-const slides = [
-  "allymusic.mp4",
-  "techhub.mp4",
-  "archbook.mp4",
-  "postremami.mp4",
-];
+const slides = ["/a1.png", "/a2.png", "/a3.png", "/a4.png"];
 
 type CarouselPageProps = {
   children: React.ReactNode; // Accepts any React content, including video elements
