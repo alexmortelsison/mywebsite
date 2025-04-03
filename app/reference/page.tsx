@@ -25,7 +25,7 @@ export default function ReferencePage() {
             "I've had the chance to work with Alex, and honestly, he's one of the most reliable and proactive people I know. Whether it's tackling tough projects or helping out the team, Alex always brings positive energy and gets things done. He's skilled, easy to work with, and I highly recommend him."
           }
           position={"COO"}
-          company={"Daily Dozed"}
+          company={"AppDev Manila"}
           country={"Manila, Philippines"}
         />
       </div>
