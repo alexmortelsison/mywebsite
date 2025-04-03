@@ -1,4 +1,3 @@
-import Footer from "../components/Footer";
 import PortfolioCard from "../components/PortfolioCard";
 
 export default function PortfolioPage() {
