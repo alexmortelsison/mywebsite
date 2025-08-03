@@ -63,13 +63,13 @@ export default function AboutPage() {
           <div className="md:col-span-3 md:pl-8 col-span-4 text-center md:text-start px-4 md:px-0 tracking-tighter">
             <p>
               I am Alex Sison, a dedicated{" "}
-              <span className="font-bold text-[#29b2ff]">web developer</span>{" "}
+              <span className="font-bold text-[#29b2ff]">Flutter Mobile Developer</span>{" "}
               with a strong passion for creating efficient, high-performing, and
               user-friendly web applications.
             </p>
             <br />
             <p>
-              Before transitioning into web development, I worked as a 3D
+              Before transitioning into Mobile Development, I worked as a 3D
               artist, honing my skills in{" "}
               <span className="font-bold text-[#29b2ff]">
                 visual design, attention to detail, and creative problem-solving
@@ -82,16 +82,16 @@ export default function AboutPage() {
               With a keen eye for detail and a commitment to continuous
               improvement, I strive to develop digital solutions that enhance{" "}
               <span className="font-bold text-[#29b2ff]">user experience</span>{" "}
-              and meet modern web standards.
+              and meet modern mobile development practices.
             </p>
             <br />
             My expertise lies in developing{" "}
             <span className="font-bold text-[#29b2ff]">
-              scalable and optimized web applications
+              scalable and optimized cross-platform applications
             </span>
             , leveraging modern technologies to build seamless and interactive
             user interfaces. I specialize in{" "}
-            <span className="font-bold text-[#29b2ff]">Next.js</span>, ensuring
+            <span className="font-bold text-[#29b2ff]">Flutter</span>, ensuring
             applications are not only fast and efficient but also maintainable
             and future-proof.
             <div className="mt-2 mb-4 flex flex-col justify-center items-center md:items-start px-16 md:px-0">
